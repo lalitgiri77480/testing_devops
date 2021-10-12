@@ -39,6 +39,7 @@ currentBuild.result = 'ABORTED'
 }
 else {
 echo "Testing"
+  build job: 'Demo'
 }
 }
 }
