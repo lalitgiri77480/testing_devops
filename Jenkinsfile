@@ -39,7 +39,7 @@ currentBuild.result = 'ABORTED'
 }
 else {
 echo "Testing"
-  build job: 'Demo'
+  build job: 'Demo', wait: false, parameters: [[$class: 'ChoiceParameter', choiceType: 'Development',$class: 'StringParameterValue', name: 'Sub_env', value: "HI1"]]
 }
 }
 }
